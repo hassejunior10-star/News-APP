@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "VN Studio - Vacaria News",
+  "short_name": "VN Studio",
+  "description": "Crie posts para o Vacaria News diretamente do celular.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#101013",
+  "theme_color": "#101013",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "./icons/vn.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

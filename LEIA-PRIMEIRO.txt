@@ -1,0 +1,26 @@
+COPIA DO VN STUDIO - VACARIA NEWS
+
+Guarde este ZIP no computador e em outro lugar seguro, como um serviço de nuvem.
+Ele contém o aplicativo pronto e o código-fonte. Fotos, logos enviadas e rascunhos
+salvos no navegador não estão nesta cópia; exporte esses arquivos separadamente.
+
+1. USAR NO COMPUTADOR
+   Descompacte o ZIP e abra aplicativo-pronto/index.html no navegador.
+   A instalação e o armazenamento podem variar quando o arquivo é aberto localmente.
+   A pasta aplicativo-pronto não contém um backup de si mesma; guarde este ZIP.
+
+2. PUBLICAR EM HTTPS
+   No Cloudflare Pages, escolha Direct Upload e envie a pasta aplicativo-pronto
+   ou um ZIP que tenha index.html na raiz. O aplicativo pode preparar esse ZIP.
+   Abra o endereço pages.dev no celular e use "Adicionar à tela inicial".
+   O site pode ficar público. Os rascunhos não são sincronizados entre aparelhos.
+
+3. EDITAR OU RECRIAR O APLICATIVO
+   Na pasta codigo-fonte, instale Node.js e execute npm install e npm run build.
+   Para desenvolvimento, use npm run dev. A instalação inicial precisa de internet.
+   Para atualizar a cópia embutida, execute node scripts/create-portable-backup.mjs.
+   O script gera o aplicativo, monta o backup e faz o build final automaticamente.
+
+Os recursos básicos não dependem do Arena após copiar e hospedar os arquivos.
+Algumas fotos externas de exemplo podem precisar de internet. A cópia no cache
+do celular não substitui este backup: o sistema pode apagá-la.
