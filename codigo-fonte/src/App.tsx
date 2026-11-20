@@ -8,6 +8,7 @@ import { BrandGuide } from './components/BrandGuide';
 import { InstagramStudio } from './components/InstagramStudio';
 import { GcStudio } from './components/GcStudio';
 import { IdentityStudio } from './components/IdentityStudio';
+import { ClientLogoStudio } from './components/ClientLogoStudio';
 import { ProfileGallery } from './components/ProfileGallery';
 import { DownloadProvider, useDeliver } from './components/DownloadDialog';
 import { InstallDialog, useInstallPrompt } from './components/InstallDialog';
@@ -16,6 +17,7 @@ import { buildZip } from './utils/exportUtils';
 
 const SECTION_NAMES: Record<Tab, string> = {
   identity: 'NOVAS LOGOS',
+  'client-logos': 'CRIAR LOGOMARCAS',
   profiles: 'FOTOS DE PERFIL',
   instagram: 'CRIAR PUBLICAÇÃO',
   gc: 'GC DE ENTREVISTA',
@@ -82,6 +84,7 @@ function Shell() {
           <div className="editor-host" hidden={activeTab !== 'gc'}><GcStudio onOpenPost={() => goTo('instagram')} /></div>
           <div className="editor-host" hidden={activeTab !== 'instagram'}><InstagramStudio /></div>
           {activeTab === 'identity' && <IdentityStudio onOpenOldLogos={() => goTo('gallery')} />}
+          {activeTab === 'client-logos' && <ClientLogoStudio />}
           {activeTab === 'profiles' && <ProfileGallery />}
           {activeTab === 'gallery' && (
             <LogoGallery
