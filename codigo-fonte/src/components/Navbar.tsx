@@ -1,7 +1,7 @@
-import { ArrowUpRight, BookOpen, Captions, CircleHelp, CircleUserRound, Images, Layers3, Palette, PenLine, Smartphone, Sparkles } from 'lucide-react';
+import { ArrowUpRight, BookOpen, Captions, CircleHelp, CircleUserRound, Images, Layers3, Palette, PenLine, Radio, Smartphone, Sparkles } from 'lucide-react';
 import { BRAND_ICON } from '../data/brand';
 
-export type Tab = 'identity' | 'client-logos' | 'profiles' | 'instagram' | 'gc' | 'gallery' | 'watermark' | 'mockups' | 'guide';
+export type Tab = 'identity' | 'client-logos' | 'radio' | 'profiles' | 'instagram' | 'gc' | 'gallery' | 'watermark' | 'mockups' | 'guide';
 
 interface NavbarProps {
   activeTab: Tab;
@@ -13,6 +13,7 @@ interface NavbarProps {
 const TABS = [
   { id: 'identity', label: 'Novas logos', mobile: 'Logos', Icon: Sparkles },
   { id: 'client-logos', label: 'Logomarcas', mobile: 'Marcas', Icon: Palette },
+  { id: 'radio', label: 'Estúdio de Rádio', mobile: 'Rádio', Icon: Radio },
   { id: 'profiles', label: 'Fotos de perfil', mobile: 'Perfil', Icon: CircleUserRound },
   { id: 'instagram', label: 'Criar publicação', mobile: 'Criar', Icon: PenLine },
   { id: 'gc', label: 'GC de entrevista', mobile: 'GC', Icon: Captions },
